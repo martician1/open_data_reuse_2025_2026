@@ -1,0 +1,7 @@
+svg path {
+  fill: lightgreen;
+  stroke: green;
+  &:hover {
+    fill: orange;
+  }
+}
