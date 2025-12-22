@@ -41,6 +41,10 @@ function Province({ name }: { name: string }) {
 
   const open = Boolean(anchorEl);
 
+  const permanent = permanentResidents.get(name);
+  const current = currentResidents.get(name);
+  const diff = permanent - current;
+
   return <>
     <path
       d={svgBorder.get(name)}
@@ -66,8 +70,10 @@ function Province({ name }: { name: string }) {
     >
       <div style={{ fontSize: 32, padding: 12, borderBottom: "6px solid darkgray" }}>
         <div style={{ textAlign: "center", fontWeight: "bold" }}> {name[0] + name.slice(1).toLowerCase()} </div>
-        <div> Постоянен адрес: {permanentResidents.get(name)} </div>
-        <div> Настоящ адрес: {currentResidents.get(name)} </div>
+        <div> Постоянен адрес: {permanent} </div>
+        <div> Настоящ адрес: {current} </div>
+        <hr/>
+        <div> Разлика: <span style={{ color: diff >= 0 ? "green" : "red" }}>{diff}</span> </div>
       </div>
     </Popover >
   </>
