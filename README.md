@@ -1,6 +1,6 @@
 # Визуализация на демографски данни за населението на България
 
-https://github.com/user-attachments/assets/a92d7529-ff6b-4226-9128-fea16dcde02a
+https://github.com/user-attachments/assets/a87d8015-09ba-44ca-885d-38d71d502da1
 
 Визуализцията е част от проект на тема Open Data Reuse за курса по Социално-правни аспекти на информационните технологии в ФМИ.
 
